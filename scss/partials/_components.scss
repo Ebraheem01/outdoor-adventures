@@ -1,0 +1,163 @@
+// global components
+
+// styling my nav bar
+
+nav {
+    ul {
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;
+        overflow: hidden;
+        background-color: $prim-col;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: $hover-col;
+            color: black;
+            transition: .8s;
+        }
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+
+        &:hover {
+            background-color: $hover-col;
+            transition: .8s;
+        } 
+    }  
+      
+      /* Dropdown button */
+      .dropdown .dropbtn {
+        text-transform: uppercase;
+        font-size: 16px; 
+        border: none;
+        outline: none;
+        color: white;
+        padding: 18px 16px;
+        background-color: inherit;
+        font-family: inherit; 
+        margin: 0; 
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        
+        &hover{
+            transition: .8s;
+        background-color: $hover-col;
+        color: black;
+        }
+    }
+      
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+  
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+// end of styling the nav bar
+
+// styling the header
+
+.header {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 2em;
+    color: $sec-col;
+    text-shadow: 3px 3px $prim-text-col-shadow;
+}
+
+.para {
+    padding: 0 50px 0 50px;
+}
+
+// styling my content
+
+.main-content {
+    text-align: center;
+}
+
+.camping {
+    text-align: justify;
+}
+
+.dwarsberg {
+    width: 420px;
+    height: 235px;
+
+
+    &:hover {
+        box-shadow:
+                10px 10px $tert-col,
+                11px 11px $tert-col,
+                12px 12px $tert-col;
+        transition: ease .5s, ease-out .2s;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+}
+
+// styling my button
+
+.btn {
+
+    a {
+        text-decoration: none;
+        color: $sec-text-col;
+        display: inline-block;
+    }
+
+    &:hover{
+        display: block;
+        background-color: black;
+        width: 100%;
+        border: none;
+        transition: .8s;
+    }
+} 
+
+// end
+
+.Oewerzicht {
+    width: 420px;
+    height: 235px;
+
+    &:hover {
+        box-shadow:
+                10px 10px $tert-col,
+                11px 11px $tert-col,
+                12px 12px $tert-col;
+        transition: ease .5s, ease-out .2s;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+}

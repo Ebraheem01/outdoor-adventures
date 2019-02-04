@@ -1,0 +1,32 @@
+/* Base Styles -------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.main-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.952),rgba(0, 0, 0, 0.795),rgba(0, 0, 0, 0.685)), url(../images/bg-images.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+
+h1,
+h2 {
+    font-size: 1.4em;
+}
+
+p {
+    font-size: 1.1em; 
+}
+

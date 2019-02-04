@@ -1,0 +1,43 @@
+// global layouts
+
+// global layouts
+.homepage {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    grid-template-areas: "header header header"
+                "prim-content prim-content prim-content"
+                "sec-content sec-content sec-content"
+                "footer footer footer";
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "content image"; 
+    grid-gap: 70px; 
+}
+
+.main-header {
+    grid-area: header;
+}
+
+.main-content {
+    grid-area: prim-content;
+}
+
+.camp1 {
+    grid-area: content;
+}
+
+.dwarsberg {
+    grid-area: image;
+}
+
+.camp2 {
+    grid-area: content;
+}
+
+.Oewerzicht {
+    grid-area: image;
+}
