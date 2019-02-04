@@ -39,16 +39,11 @@ p {
 .main-content {
   grid-area: prim-content; }
 
-.camp1 {
+.activities1,
+.activities2 {
   grid-area: content; }
 
-.dwarsberg {
-  grid-area: image; }
-
-.camp2 {
-  grid-area: content; }
-
-.Oewerzicht {
+.images {
   grid-area: image; }
 
 nav {
@@ -71,14 +66,14 @@ nav {
     text-decoration: none;
     text-transform: uppercase; }
     nav a:hover {
-      background-color: #a6ff00;
+      background-color: #00ffd4;
       color: black;
       transition: .8s; }
   nav .dropdown {
     float: left;
     overflow: hidden; }
     nav .dropdown:hover {
-      background-color: #a6ff00;
+      background-color: #00ffd4;
       transition: .8s; }
   nav .dropdown .dropbtn {
     text-transform: uppercase;
@@ -99,8 +94,8 @@ nav {
     z-index: 1; }
     nav .dropdown-contenthover {
       transition: .8s;
-      background-color: #a6ff00;
-      color: black; }
+      background-color: #00ffd4;
+      color: #000000; }
   nav .dropdown-content a {
     float: none;
     color: white;
@@ -124,13 +119,16 @@ nav {
 .main-content {
   text-align: center; }
 
-.camping {
+.camping,
+.hiking,
+.climbing,
+.fishing {
   text-align: justify; }
 
-.dwarsberg {
-  width: 420px;
-  height: 235px; }
-  .dwarsberg:hover {
+.images {
+  width: 600px;
+  height: 315px; }
+  .images:hover {
     box-shadow: 10px 10px #00ffff, 11px 11px #00ffff, 12px 12px #00ffff;
     transition: ease .5s, ease-out .2s;
     -webkit-transform: translateX(-3px);
@@ -138,22 +136,13 @@ nav {
 
 .btn a {
   text-decoration: none;
-  color: #15ff00;
+  color: #000000;
   display: inline-block; }
 .btn:hover {
   display: block;
-  background-color: black;
+  background-color: #00ffd4;
   width: 100%;
   border: none;
   transition: .8s; }
-
-.Oewerzicht {
-  width: 420px;
-  height: 235px; }
-  .Oewerzicht:hover {
-    box-shadow: 10px 10px #00ffff, 11px 11px #00ffff, 12px 12px #00ffff;
-    transition: ease .5s, ease-out .2s;
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px); }
 
 /*# sourceMappingURL=main.css.map */

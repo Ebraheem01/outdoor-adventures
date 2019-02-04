@@ -63,8 +63,8 @@ nav {
         
         &hover{
             transition: .8s;
-        background-color: $hover-col;
-        color: black;
+            background-color: $hover-col;
+            color: #000000;
         }
     }
       
@@ -106,13 +106,16 @@ nav {
     text-align: center;
 }
 
-.camping {
+.camping,
+.hiking,
+.climbing,
+.fishing {
     text-align: justify;
 }
 
-.dwarsberg {
-    width: 420px;
-    height: 235px;
+.images {
+    width: 600px;
+    height: 315px;
 
 
     &:hover {
@@ -132,13 +135,13 @@ nav {
 
     a {
         text-decoration: none;
-        color: $sec-text-col;
+        color: $prim-col;
         display: inline-block;
     }
 
     &:hover{
         display: block;
-        background-color: black;
+        background-color: $hover-col;
         width: 100%;
         border: none;
         transition: .8s;
@@ -147,17 +150,4 @@ nav {
 
 // end
 
-.Oewerzicht {
-    width: 420px;
-    height: 235px;
 
-    &:hover {
-        box-shadow:
-                10px 10px $tert-col,
-                11px 11px $tert-col,
-                12px 12px $tert-col;
-        transition: ease .5s, ease-out .2s;
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-    }
-}
