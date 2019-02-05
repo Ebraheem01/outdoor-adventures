@@ -8,11 +8,11 @@ nav {
         margin: 0 auto;
         padding: 0;
         overflow: hidden;
-        background-color: $prim-col;
+        background-color: rgba(0, 0, 0, 0.336);
     }
     
     li {
-        float: left;
+        float: right;
     }
     
     a {
@@ -31,7 +31,7 @@ nav {
     }
 
     .dropdown {
-        float: left;
+        float: right;
         overflow: hidden;
 
         &:hover {
@@ -47,25 +47,23 @@ nav {
         border: none;
         outline: none;
         color: white;
-        padding: 18px 16px;
+        padding: 14px 5px;
         background-color: inherit;
         font-family: inherit; 
         margin: 0; 
+
+        &:hover {
+            color: black;
+        }
       }
 
       .dropdown-content {
         display: none;
         position: absolute;
-        background-color: black;
-        min-width: 160px;
+        background-color: #0000004f;
+        width: 105.5px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
-        
-        &hover{
-            transition: .8s;
-            background-color: $hover-col;
-            color: #000000;
-        }
     }
       
       /* Links inside the dropdown */
@@ -76,6 +74,11 @@ nav {
         text-decoration: none;
         display: block;
         text-align: left;
+
+        &hover{
+            transition: .8s;
+            background-color: $hover-col;
+        }
       }
   
     /* Show the dropdown menu on hover */
@@ -92,8 +95,7 @@ nav {
     margin-top: 150px;
     text-align: center;
     font-size: 2em;
-    color: $sec-col;
-    text-shadow: 3px 3px $prim-text-col-shadow;
+    color: black;
 }
 
 .para {
@@ -113,9 +115,58 @@ nav {
     text-align: justify;
 }
 
+.bg-camping {
+    background-image: url(../images/bg-camp.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    padding: 100px;
+}
+
+.bg-hiking {
+    background-image: url(../images/pexels-photo-372098.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    padding: 100px;
+}
+
+.bg-climbing {
+    background-image: url(../images/bg-climb.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    padding: 100px;
+}
+
+.bg-fishing {
+    background-image: url(../images/bg-fish.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    padding: 100px;
+}
+
+.bg-hunting {
+    background-image: url(../images/Deer-Hunting-Background3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    padding: 100px;
+}
+
+.bg-canoeing {
+    background-image: url(../images/bg-canoeing2.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    padding: 100px;
+}
+
 .images {
     width: 600px;
     height: 315px;
+    border: 20px;
 
 
     &:hover {
@@ -150,4 +201,195 @@ nav {
 
 // end
 
+// end of homepage
 
+// gallery page
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px white solid;
+
+    &:hover {
+        box-shadow:
+                5px 5px rgba(253, 253, 253, 0.712),
+                6px 6px rgba(255, 255, 255, 0.534),
+                7px 7px rgba(255, 253, 253, 0.274);
+        transition: ease .5s, ease-out .2s;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+}
+
+// camping
+
+.camp1 {
+    grid-column: span 2;
+}
+
+.camp2 {
+    grid-column: span 2; 
+}
+
+.camp3 {
+    grid-column: span 2; 
+}
+
+.camp4 {
+    grid-column: span 2; 
+}
+
+.camp5 {
+    grid-column: span 3;
+}
+
+.camp6 {
+    grid-column: span 3;
+}
+
+.camp7 {
+    grid-column: span 2;
+}
+
+// end
+
+// hiking
+
+.hike1 {
+    grid-column: span 3;
+}
+
+.hike2 {
+    grid-column: span 3;
+}
+
+.hike3 {
+    grid-column: span 2;
+}
+
+.hike4 {
+    grid-column: span 3;
+}
+
+.hike5 {
+    grid-column: span 2;
+}
+
+.hike6 {
+    grid-column: span 3;
+}
+
+.hike7 {
+    grid-column: span 4;
+}
+
+.hike8 {
+    grid-column: span 4;
+}
+
+// end
+// climbing
+
+.climb1 {
+    grid-column: span 3;
+}
+
+.climb2 {
+    grid-column: span 3;
+}
+
+.climb3 {
+    grid-column: span 2;
+}
+
+.climb4 {
+    grid-column: span 4;
+}
+
+.climb5 {
+    grid-column: span 4;
+}
+
+// end
+// fishing
+
+.fish1 {
+    grid-column: span 2;
+}
+
+.fish2 {
+    grid-column: span 4;
+}
+
+.fish3 {
+    grid-column: span 2;
+}
+
+.fish4 {
+    grid-column: span 2;
+}
+
+.fish5 {
+    grid-column: span 2;
+}
+
+.fish6 {
+    grid-column: span 2;
+}
+
+.fish7 {
+    grid-column: span 2;
+}
+
+// end
+// hunting
+
+.hunt1 {
+    grid-column: span 4;
+}
+
+.hunt2 {
+    grid-column: span 4;
+}
+
+.hunt3 {
+    grid-column: span 3;
+}
+
+.hunt4 {
+    grid-column: span 2;
+}
+
+.hunt5 {
+    grid-column: span 3;
+}
+
+// end
+// canoe
+
+.canoe1 {
+    grid-column: span 4;
+}
+
+.canoe2 {
+    grid-column: span 4;
+}
+
+.canoe3 {
+    grid-column: span 4;
+}
+
+.canoe4 {
+    grid-column: span 4;
+}
+
+.canoe5 {
+    grid-column: span 4;
+}
+
+.canoe6 {
+    grid-column: span 4;
+}
+
+// end
