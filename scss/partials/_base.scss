@@ -29,8 +29,16 @@ body {
 }
 
 .gallery {
-    background-image: url(../images/man-person-jumping-desert.jpg);
+    background-image: linear-gradient(#0000ffb2,#0000ffa4,#0000ff8f,#0000ff3a) ,url(../images/man-person-jumping-desert.jpg);
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Righteous', cursive;
+}
+
+.contact {
+    background-image:  url(../images/pexels-photo-372098.jpeg);
+    // background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }

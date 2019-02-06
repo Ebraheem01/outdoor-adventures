@@ -27,6 +27,9 @@ nav {
             background-color: $hover-col;
             color: black;
             transition: .8s;
+            text-shadow: 2px 5px 5px #363636,
+                        -2px -5px 5px #313131;
+            transition: ease .8s, ease-out .4s;
         }
     }
 
@@ -37,6 +40,9 @@ nav {
         &:hover {
             background-color: $hover-col;
             transition: .8s;
+            text-shadow: 2px 5px 5px #363636,
+                        -2px -5px 5px #313131;
+            transition: ease .8s, ease-out .4s;
         } 
     }  
       
@@ -116,65 +122,87 @@ nav {
 }
 
 .bg-camping {
-    background-image: url(../images/bg-camp.jpeg);
+    background-image: linear-gradient( #0000ff62, #0000ff3a), url(../images/bg-camp.jpeg);
     background-size: cover;
     background-attachment: fixed;
     height: 70vh;
+    color: white;
     padding: 100px;
+    box-shadow: 3px 7px 7px #a0a0a0,
+                    -3px -7px 7px #a3a3a3;
+    transition: ease .8s, ease-out .4s;
 }
 
 .bg-hiking {
-    background-image: url(../images/pexels-photo-372098.jpeg);
+    background-image: linear-gradient( #0000ff62, #0000ff3a), url(../images/pexels-photo-372098.jpeg);
     background-size: cover;
+    color: white;
     background-attachment: fixed;
     height: 70vh;
     padding: 100px;
+    box-shadow: 3px 7px 7px #a0a0a0,
+                    -3px -7px 7px #a3a3a3;
+    transition: ease .8s, ease-out .4s;
 }
 
 .bg-climbing {
-    background-image: url(../images/bg-climb.jpeg);
+    background-image: linear-gradient( #0000ff9f, #0000ff91, #ff9c9198), url(../images/bg-climb.jpeg);
     background-size: cover;
+    color: white;
     background-attachment: fixed;
     height: 70vh;
     padding: 100px;
+    box-shadow: 3px 7px 7px #a0a0a0,
+                    -3px -7px 7px #a3a3a3;
+    transition: ease .8s, ease-out .4s;
 }
 
 .bg-fishing {
-    background-image: url(../images/bg-fish.jpeg);
+    background-image: linear-gradient( rgba(128, 128, 128, 0.24),#9c9c9c9f, #7e7e7e91, #75757598), url(../images/bg-fish.jpeg);
     background-size: cover;
+    color: white;
     background-attachment: fixed;
     height: 70vh;
     padding: 100px;
+    box-shadow: 3px 7px 7px #a0a0a0,
+                    -3px -7px 7px #a3a3a3;
+    transition: ease .8s, ease-out .4s;
 }
 
 .bg-hunting {
-    background-image: url(../images/Deer-Hunting-Background3.jpg);
+    background-image: linear-gradient( #ff73003d,#ff66009f, #ff005591, #75757598), url(../images/Deer-Hunting-Background3.jpg);
     background-size: cover;
+    color: white;
     background-attachment: fixed;
     height: 70vh;
     padding: 100px;
+    box-shadow: 3px 7px 7px #a0a0a0,
+                    -3px -7px 7px #a3a3a3;
+    transition: ease .8s, ease-out .4s;
 }
 
 .bg-canoeing {
-    background-image: url(../images/bg-canoeing2.jpeg);
+    background-image:  linear-gradient( #00ffea3d,#00ff739f, #2600ff91, #75757598), url(../images/bg-canoeing2.jpeg);
     background-size: cover;
+    color: white;
     background-attachment: fixed;
     height: 70vh;
     padding: 100px;
+    box-shadow: 3px 7px 7px #a0a0a0,
+                    -3px -7px 7px #a3a3a3;
+    transition: ease .8s, ease-out .4s;
 }
 
 .images {
     width: 600px;
     height: 315px;
-    border: 20px;
+    border: 1px black solid;
 
 
     &:hover {
-        box-shadow:
-                10px 10px $tert-col,
-                11px 11px $tert-col,
-                12px 12px $tert-col;
-        transition: ease .5s, ease-out .2s;
+        box-shadow: 3px 7px 7px #a0a0a0,
+                    -3px -7px 7px #a3a3a3;
+        transition: ease .8s, ease-out .4s;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
     }
@@ -191,11 +219,16 @@ nav {
     }
 
     &:hover{
+        box-shadow: 3px 7px 7px #a0a0a0,
+        -3px -7px 7px #a3a3a3;
+        transition: ease .5s, ease-out .2s;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
         display: block;
         background-color: $hover-col;
         width: 100%;
-        border: none;
-        transition: .8s;
+        border: 1px solid black;
+        // transition: .8s;
     }
 } 
 
@@ -208,17 +241,16 @@ nav {
 img {
     width: 100%;
     height: 100%;
-    border-radius: 20px;
-    border: 2px white solid;
+    border: 2px black solid;
+    opacity: 0.7;
 
     &:hover {
-        box-shadow:
-                5px 5px rgba(253, 253, 253, 0.712),
-                6px 6px rgba(255, 255, 255, 0.534),
-                7px 7px rgba(255, 253, 253, 0.274);
-        transition: ease .5s, ease-out .2s;
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
+        box-shadow: 3px 7px 7px #a0a0a0,
+                    -3px -7px 7px #a3a3a3;
+        transition: ease 1s, ease-out 0.9s;
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+        opacity: 1;
     }
 }
 
@@ -393,3 +425,79 @@ img {
 }
 
 // end
+
+// contact page 
+
+.main-contact {
+    background-color: rgba(255, 255, 255, 0.137);
+    text-align: center;
+    margin: 150px 200px;
+    padding: 20px;
+    border-radius: 20px;
+    float: right;
+    font-family: 'Righteous', cursive;
+}
+
+
+input {
+    background-color: #ffffff15;
+    width: 250px;
+    height: 30px;
+    padding: 5px; 
+    font-size: 1.2em;
+    font-family: 'Righteous', cursive;
+
+    &:hover {
+        background: white;
+        box-shadow: 3px 7px 7px #a0a0a0,
+                    -3px -7px 7px #a3a3a3;
+        transition: ease 1s, ease-out 0.9s;
+        -webkit-transform: translateX(-2px);
+        transform: translateX(-2px);
+    }
+}
+
+select {
+    border: 2px solid rgb(185, 185, 185);
+    background-color: #ffffff15;
+    width: 250px;
+    height: 30px;
+    padding-top: 3px;
+    font-size: 1em;
+    font-family: 'Righteous', cursive;
+}
+
+textarea {
+    background-color: #ffffff15; 
+    font-family: 'Righteous', cursive;
+    
+    &:hover {
+        background: white;
+        box-shadow: 3px 7px 7px #a0a0a0,
+                    -3px -7px 7px #a3a3a3;
+        transition: ease 1s, ease-out 0.9s;
+        -webkit-transform: translateX(-2px);
+        transform: translateX(-2px);
+    }
+}
+
+
+.button {
+    background-color: #ffffff15;
+    width: 500px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    font-family: 'Righteous', cursive;
+    
+    &:hover {
+        background: white;
+        box-shadow: 3px 7px 7px #a0a0a0,
+                    -3px -7px 7px #a3a3a3;
+        transition: ease 1s, ease-out 0.9s;
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+}
