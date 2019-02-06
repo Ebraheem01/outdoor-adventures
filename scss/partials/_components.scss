@@ -27,9 +27,14 @@ nav {
             background-color: $hover-col;
             color: black;
             transition: .8s;
-            text-shadow: 2px 5px 5px #363636,
-                        -2px -5px 5px #313131;
+            box-shadow: 1px 2px 2px #363636,
+                        -1px -2px 2px #313131;
             transition: ease .8s, ease-out .4s;
+        }
+
+        &:active {
+            background-color: $hover-col;
+            color: black;
         }
     }
 
@@ -101,7 +106,6 @@ nav {
     margin-top: 150px;
     text-align: center;
     font-size: 2em;
-    color: black;
 }
 
 .para {
@@ -125,7 +129,7 @@ nav {
     background-image: linear-gradient( #0000ff62, #0000ff3a), url(../images/bg-camp.jpeg);
     background-size: cover;
     background-attachment: fixed;
-    height: 70vh;
+    height: 100vh;
     color: white;
     padding: 100px;
     box-shadow: 3px 7px 7px #a0a0a0,
@@ -138,7 +142,7 @@ nav {
     background-size: cover;
     color: white;
     background-attachment: fixed;
-    height: 70vh;
+    height: 100vh;
     padding: 100px;
     box-shadow: 3px 7px 7px #a0a0a0,
                     -3px -7px 7px #a3a3a3;
@@ -150,7 +154,7 @@ nav {
     background-size: cover;
     color: white;
     background-attachment: fixed;
-    height: 70vh;
+    height: 100vh;
     padding: 100px;
     box-shadow: 3px 7px 7px #a0a0a0,
                     -3px -7px 7px #a3a3a3;
@@ -162,7 +166,7 @@ nav {
     background-size: cover;
     color: white;
     background-attachment: fixed;
-    height: 70vh;
+    height: 100vh;
     padding: 100px;
     box-shadow: 3px 7px 7px #a0a0a0,
                     -3px -7px 7px #a3a3a3;
@@ -174,7 +178,7 @@ nav {
     background-size: cover;
     color: white;
     background-attachment: fixed;
-    height: 70vh;
+    height: 100vh;
     padding: 100px;
     box-shadow: 3px 7px 7px #a0a0a0,
                     -3px -7px 7px #a3a3a3;
@@ -186,7 +190,7 @@ nav {
     background-size: cover;
     color: white;
     background-attachment: fixed;
-    height: 70vh;
+    height: 100vh;
     padding: 100px;
     box-shadow: 3px 7px 7px #a0a0a0,
                     -3px -7px 7px #a3a3a3;
@@ -216,6 +220,8 @@ nav {
         text-decoration: none;
         color: $prim-col;
         display: inline-block;
+        font-family: 'Righteous', cursive;
+        font-size: 1.2em;
     }
 
     &:hover{
@@ -231,6 +237,12 @@ nav {
         // transition: .8s;
     }
 } 
+
+footer {
+    background-color: grey;
+    height: 10vh;
+    text-align: center;
+}
 
 // end
 

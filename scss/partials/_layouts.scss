@@ -11,6 +11,10 @@
                 "footer footer footer";
 }
 
+footer {
+    grid-area: footer;
+}
+
 .container{
     padding: 0 10px 0 10px;
     display: grid;

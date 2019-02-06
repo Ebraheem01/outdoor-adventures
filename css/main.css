@@ -12,7 +12,7 @@ body {
   font-family: 'Noto Sans', sans-serif; }
 
 .main-header {
-  background-image: url(../images/man-person-jumping-desert.jpg);
+  background-image: linear-gradient(#00ffff69, #00ffff4f), url(../images/man-person-jumping-desert.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -20,7 +20,7 @@ body {
   font-family: 'Righteous', cursive; }
 
 .gallery {
-  background-image: linear-gradient(#0000ffb2, #0000ffa4, #0000ff8f, #0000ff3a), url(../images/man-person-jumping-desert.jpg);
+  background-image: linear-gradient(#0000ff7e, #0000ffa4, #0000ff8f, #0000ff3a), url(../images/man-person-jumping-desert.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,6 +48,9 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "header header header" "prim-content prim-content prim-content" "sec-content sec-content sec-content" "footer footer footer"; }
+
+footer {
+  grid-area: footer; }
 
 .container {
   padding: 0 10px 0 10px;
@@ -98,8 +101,11 @@ nav {
       background-color: #00ffd4;
       color: black;
       transition: .8s;
-      text-shadow: 2px 5px 5px #363636, -2px -5px 5px #313131;
+      box-shadow: 1px 2px 2px #363636, -1px -2px 2px #313131;
       transition: ease .8s, ease-out .4s; }
+    nav a:active {
+      background-color: #00ffd4;
+      color: black; }
   nav .dropdown {
     float: right;
     overflow: hidden; }
@@ -143,8 +149,7 @@ nav {
 .header {
   margin-top: 150px;
   text-align: center;
-  font-size: 2em;
-  color: black; }
+  font-size: 2em; }
 
 .para {
   padding: 0 50px 0 50px; }
@@ -162,7 +167,7 @@ nav {
   background-image: linear-gradient(#0000ff62, #0000ff3a), url(../images/bg-camp.jpeg);
   background-size: cover;
   background-attachment: fixed;
-  height: 70vh;
+  height: 100vh;
   color: white;
   padding: 100px;
   box-shadow: 3px 7px 7px #a0a0a0, -3px -7px 7px #a3a3a3;
@@ -173,7 +178,7 @@ nav {
   background-size: cover;
   color: white;
   background-attachment: fixed;
-  height: 70vh;
+  height: 100vh;
   padding: 100px;
   box-shadow: 3px 7px 7px #a0a0a0, -3px -7px 7px #a3a3a3;
   transition: ease .8s, ease-out .4s; }
@@ -183,7 +188,7 @@ nav {
   background-size: cover;
   color: white;
   background-attachment: fixed;
-  height: 70vh;
+  height: 100vh;
   padding: 100px;
   box-shadow: 3px 7px 7px #a0a0a0, -3px -7px 7px #a3a3a3;
   transition: ease .8s, ease-out .4s; }
@@ -193,7 +198,7 @@ nav {
   background-size: cover;
   color: white;
   background-attachment: fixed;
-  height: 70vh;
+  height: 100vh;
   padding: 100px;
   box-shadow: 3px 7px 7px #a0a0a0, -3px -7px 7px #a3a3a3;
   transition: ease .8s, ease-out .4s; }
@@ -203,7 +208,7 @@ nav {
   background-size: cover;
   color: white;
   background-attachment: fixed;
-  height: 70vh;
+  height: 100vh;
   padding: 100px;
   box-shadow: 3px 7px 7px #a0a0a0, -3px -7px 7px #a3a3a3;
   transition: ease .8s, ease-out .4s; }
@@ -213,7 +218,7 @@ nav {
   background-size: cover;
   color: white;
   background-attachment: fixed;
-  height: 70vh;
+  height: 100vh;
   padding: 100px;
   box-shadow: 3px 7px 7px #a0a0a0, -3px -7px 7px #a3a3a3;
   transition: ease .8s, ease-out .4s; }
@@ -231,7 +236,9 @@ nav {
 .btn a {
   text-decoration: none;
   color: #000000;
-  display: inline-block; }
+  display: inline-block;
+  font-family: 'Righteous', cursive;
+  font-size: 1.2em; }
 .btn:hover {
   box-shadow: 3px 7px 7px #a0a0a0, -3px -7px 7px #a3a3a3;
   transition: ease .5s, ease-out .2s;
@@ -241,6 +248,11 @@ nav {
   background-color: #00ffd4;
   width: 100%;
   border: 1px solid black; }
+
+footer {
+  background-color: grey;
+  height: 10vh;
+  text-align: center; }
 
 img {
   width: 100%;
