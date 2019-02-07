@@ -495,18 +495,82 @@ textarea {
   p {
     font-size: 1em; } }
 @media only screen and (max-width: 725px) {
+  .homepage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header header" "prim-content prim-content" "footer footer"; }
+
+  .main-content {
+    grid-area: prim-content; }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "content1" "image1" "content2" "image2";
+    grid-gap: 70px; }
+
+  .activities1 {
+    grid-area: content1; }
+
+  .activities2 {
+    grid-area: image1; }
+
+  .images {
+    grid-area: image1; }
+
+  .images2 {
+    grid-area: image2; }
+
+  li {
+    float: left; }
+
+  a {
+    padding: 5px 10px; }
+
+  .dropdown {
+    float: left; }
+
+  .dropdown .dropbtn {
+    font-size: 0.8em; }
+
   .main-header {
-    height: 70vh; }
+    background-attachment: scroll;
+    height: 60vh;
+    align-self: center; }
 
   .heading {
-    margin-top: 150px;
+    margin-top: 80px;
     text-align: center;
     font-size: 1.5em; }
 
   .para {
-    padding: 0 115px 0 88px;
-    font-size: 1.5em;
-    font-weight: 800;
-    font-family: 'Noto Sans', sans-serif; } }
+    padding: 0 10px 0px;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif; }
+
+  .bg-camping,
+  .bg-hiking,
+  .bg-climbing,
+  .bg-hiking,
+  .bg-fishing,
+  .bg-hunting,
+  .bg-canoeing {
+    height: 50vh;
+    padding: 10px;
+    align-self: center;
+    background-attachment: scroll; }
+
+  .images {
+    width: 280px;
+    height: 200px;
+    margin-top: 0px; }
+
+  .images,
+  .images2 {
+    width: 280px;
+    height: 200px;
+    margin-top: 0px;
+    margin-left: 0px; } }
 
 /*# sourceMappingURL=main.css.map */
