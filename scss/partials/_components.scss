@@ -102,14 +102,17 @@ nav {
 
 // styling the header
 
-.header {
+.heading {
     margin-top: 150px;
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .para {
-    padding: 0 50px 0 50px;
+    padding: 0 115px 0 88px;
+    font-size: 1.5em;
+    font-weight: 800;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 // styling my content
@@ -118,11 +121,12 @@ nav {
     text-align: center;
 }
 
-.camping,
-.hiking,
-.climbing,
-.fishing {
+.activities1,
+.activities2 {
+    align-self: center;
+    font-size: 1em;
     text-align: justify;
+    margin: 5px 55px;
 }
 
 .bg-camping {
@@ -197,19 +201,16 @@ nav {
     transition: ease .8s, ease-out .4s;
 }
 
-.images {
-    width: 600px;
-    height: 315px;
-    border: 1px black solid;
-
-
-    &:hover {
-        box-shadow: 3px 7px 7px #a0a0a0,
-                    -3px -7px 7px #a3a3a3;
-        transition: ease .8s, ease-out .4s;
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-    }
+.images,
+.images2 {
+    width: 700px;
+    height: 410px;
+    margin: 20px;
+    box-shadow: 3px 7px 7px #a0a0a0,
+               -3px -7px 7px #a3a3a3;
+    transition: ease .8s, ease-out .4s;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
 }
 
 // styling my button
@@ -221,20 +222,8 @@ nav {
         color: $prim-col;
         display: inline-block;
         font-family: 'Righteous', cursive;
-        font-size: 1.2em;
-    }
-
-    &:hover{
-        box-shadow: 3px 7px 7px #a0a0a0,
-        -3px -7px 7px #a3a3a3;
-        transition: ease .5s, ease-out .2s;
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-        display: block;
-        background-color: $hover-col;
-        width: 100%;
-        border: 1px solid black;
-        // transition: .8s;
+        font-size: 1em;
+        width: 130px;
     }
 } 
 
@@ -253,16 +242,11 @@ footer {
 img {
     width: 100%;
     height: 100%;
-    border: 2px black solid;
-    opacity: 0.7;
 
     &:hover {
         box-shadow: 3px 7px 7px #a0a0a0,
                     -3px -7px 7px #a3a3a3;
-        transition: ease 1s, ease-out 0.9s;
-        -webkit-transform: translateY(-3px);
-        transform: translateY(-3px);
-        opacity: 1;
+        transition: ease 1s, ease-out 0.2s;
     }
 }
 
@@ -441,7 +425,6 @@ img {
 // contact page 
 
 .main-contact {
-    background-color: rgba(255, 255, 255, 0.137);
     text-align: center;
     margin: 150px 200px;
     padding: 20px;
@@ -453,14 +436,15 @@ img {
 
 input {
     background-color: #ffffff15;
+    border: 1px black solid;
     width: 250px;
     height: 30px;
-    padding: 5px; 
+    padding: 5px 10px; 
     font-size: 1.2em;
     font-family: 'Righteous', cursive;
 
     &:hover {
-        background: white;
+        background: rgba(255, 255, 255, 0);
         box-shadow: 3px 7px 7px #a0a0a0,
                     -3px -7px 7px #a3a3a3;
         transition: ease 1s, ease-out 0.9s;
@@ -470,21 +454,23 @@ input {
 }
 
 select {
-    border: 2px solid rgb(185, 185, 185);
+    border: 1px black solid;
     background-color: #ffffff15;
     width: 250px;
     height: 30px;
     padding-top: 3px;
+    color: grey;
     font-size: 1em;
     font-family: 'Righteous', cursive;
 }
 
 textarea {
+    border: 1px black solid;
     background-color: #ffffff15; 
     font-family: 'Righteous', cursive;
     
     &:hover {
-        background: white;
+        background: #ffffff00;
         box-shadow: 3px 7px 7px #a0a0a0,
                     -3px -7px 7px #a3a3a3;
         transition: ease 1s, ease-out 0.9s;
@@ -495,8 +481,9 @@ textarea {
 
 
 .button {
+    border: 1px black solid;
     background-color: #ffffff15;
-    width: 500px;
+    width: 510px;
     height: 40px;
     padding: 5px;
     text-align: center;
@@ -505,7 +492,7 @@ textarea {
     font-family: 'Righteous', cursive;
     
     &:hover {
-        background: white;
+        background: #ffffff00;
         box-shadow: 3px 7px 7px #a0a0a0,
                     -3px -7px 7px #a3a3a3;
         transition: ease 1s, ease-out 0.9s;

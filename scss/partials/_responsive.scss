@@ -1,0 +1,112 @@
+// responsiveness
+
+// laptop max-width 1024
+@media only screen and (max-width:1024px) {
+
+    // grids
+
+    .grid2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "content image"; 
+        grid-gap: 70px; 
+    }
+
+    .activities1 {
+        grid-area: content;
+    }
+
+    .activities2 {
+        grid-area: image;
+    }
+
+    .images {
+        grid-area: image;
+    }
+
+    .images2 {
+        grid-area: content;
+    }
+
+    // end
+
+    .images,
+    .images2 {
+        width: 300px;
+        height: 200px;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+
+    .activities1,
+    .activities2 {
+        align-self: center;
+        font-size: 1em;
+        text-align: justify;
+        margin: 5px 15px;
+    }
+
+    
+// styling the header
+
+    .heading {
+        margin-top: 150px;
+        text-align: center;
+        font-size: 2.8em;
+    }
+
+    .para {
+        text-align: center;
+        padding: 0 70px 0 70px;
+        font-size: 1.4em;
+        font-weight: 800;
+        font-family: 'Noto Sans', sans-serif;
+    }
+}
+
+// tablet 786px
+
+@media only screen and (max-width:786px) {
+    .grid2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "content content image"; 
+        grid-gap: 70px; 
+    }
+
+    .images {
+        width: 280px;
+        height: 200px;
+        margin-top: 60px;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.2em; 
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+// mobile 425px 
+
+@media only screen and (max-width:725px) {
+    .main-header {
+        height: 70vh;
+    }
+
+    .heading {
+        margin-top: 150px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    
+    .para {
+        padding: 0 115px 0 88px;
+        font-size: 1.5em;
+        font-weight: 800;
+        font-family: 'Noto Sans', sans-serif;
+    }
+} 
