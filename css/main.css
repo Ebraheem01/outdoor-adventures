@@ -515,6 +515,13 @@ textarea {
   .activities2 {
     grid-area: image1; }
 
+  .activities1,
+  .activities2 {
+    align-self: center;
+    font-size: 0.8em;
+    text-align: justify;
+    margin: 0px 15px; }
+
   .images {
     grid-area: image1; }
 
