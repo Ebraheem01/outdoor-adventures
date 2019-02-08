@@ -544,9 +544,7 @@ p {
     background-attachment: scroll;
     height: 45vh;
     color: white;
-    padding: 40px;
-    box-shadow: 3px 7px 7px #a0a0a0, -3px -7px 7px #a3a3a3;
-    transition: ease .8s, ease-out .4s; }
+    padding: 40px; }
 
   .images,
   .images2 {
@@ -585,39 +583,46 @@ p {
     float: none; } }
 @media only screen and (max-width: 320px) {
   .main-header {
-    height: 40vh; }
+    height: 45vh; }
 
   .heading {
     margin-top: 50px;
     text-align: center;
-    font-size: 0.9em; }
+    font-size: 1.3em; }
 
   .para {
     color: white;
     text-align: center;
     padding: 0 10px 0 10px;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: 500;
     font-family: 'Noto Sans', sans-serif; }
 
   .main-header {
     font-size: 0.6em; }
 
-  li a {
-    padding-top: 10px; }
+  a {
+    font-size: 0.9em;
+    padding: 0 auto; }
 
-  .dropdown {
-    float: right;
-    overflow: hidden; }
-    .dropdown:hover {
-      background-color: #00ffd4;
-      transition: .8s; }
+  nav .dropdown .dropbtn {
+    font-size: 11px; }
 
-  li a {
-    padding-top: 15px; }
+  nav .dropdown-content {
+    width: 76.5px; }
 
-  .dropdown {
-    font-size: 0.6em;
-    float: none; } }
+  .bg-camping,
+  .bg-hiking,
+  .bg-climbing,
+  .bg-fishing,
+  .bg-hunting,
+  .bg-canoeing {
+    background-attachment: scroll;
+    height: 45vh;
+    color: white;
+    padding: 20px; }
+
+  h1 {
+    font-size: 0.8em; } }
 
 /*# sourceMappingURL=main.css.map */
