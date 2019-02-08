@@ -581,7 +581,7 @@ p {
   .dropdown {
     font-size: 0.8em;
     float: none; } }
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 370px) {
   .main-header {
     height: 45vh; }
 
