@@ -583,5 +583,41 @@ p {
   .dropdown {
     font-size: 0.8em;
     float: none; } }
+@media only screen and (max-width: 320px) {
+  .main-header {
+    height: 40vh; }
+
+  .heading {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.9em; }
+
+  .para {
+    color: white;
+    text-align: center;
+    padding: 0 10px 0 10px;
+    font-size: 0.8em;
+    font-weight: 500;
+    font-family: 'Noto Sans', sans-serif; }
+
+  .main-header {
+    font-size: 0.6em; }
+
+  li a {
+    padding-top: 10px; }
+
+  .dropdown {
+    float: right;
+    overflow: hidden; }
+    .dropdown:hover {
+      background-color: #00ffd4;
+      transition: .8s; }
+
+  li a {
+    padding-top: 15px; }
+
+  .dropdown {
+    font-size: 0.6em;
+    float: none; } }
 
 /*# sourceMappingURL=main.css.map */
