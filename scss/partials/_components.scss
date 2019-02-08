@@ -45,7 +45,6 @@ nav {
         } 
     }  
       
-      /* Dropdown button */
       .dropdown .dropbtn {
         text-transform: uppercase;
         font-size: 16px; 
@@ -71,7 +70,6 @@ nav {
         z-index: 1;
     }
       
-      /* Links inside the dropdown */
       .dropdown-content a {
         float: none;
         color: white;
@@ -87,7 +85,6 @@ nav {
         }
       }
   
-    /* Show the dropdown menu on hover */
     .dropdown:hover .dropdown-content {
         display: block;
     }
