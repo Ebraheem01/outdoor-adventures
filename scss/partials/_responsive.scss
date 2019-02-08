@@ -32,8 +32,8 @@
 
     .images,
     .images2 {
-        width: 300px;
-        height: 200px;
+        width: 490px;
+        height: 340px;
         margin-top: 50px;
         margin-left: 50px;
     }
@@ -43,7 +43,7 @@
         align-self: center;
         font-size: 1em;
         text-align: justify;
-        margin: 5px 15px;
+        margin: 5px 10px;
     }
 
     
@@ -64,144 +64,200 @@
     }
 }
 
+h1,
+h2 {
+    font-size: 1.2em;
+} 
+
+p {
+    font-size: 0.9em;
+}
+
 // tablet 786px
 
 @media only screen and (max-width:786px) {
-    .grid2 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "content content image"; 
-        grid-gap: 70px; 
-    }
-
-    .images {
-        width: 280px;
-        height: 200px;
-        margin-top: 60px;
-    }
-
-    h1,
-    h2 {
-        font-size: 1.2em; 
-    }
-
-    p {
-        font-size: 1em;
-    }
-}
-
-// mobile 425px 
-
-@media only screen and (max-width:725px) {
 
     .homepage {
         display: grid;
         grid-template-columns: repeat(2,1fr);
     
         grid-template-areas: "header header"
-                    "prim-content prim-content"
-                    "footer footer";
+                             "prim-content prim-content"
+                             "footer footer";
     }
 
-    .main-content {
-        grid-area: prim-content;
+    .heading {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .para {
+        text-align: center;
+        padding: 0 70px 0 70px;
+        font-size: 1.4em;
+        font-weight: 500;
+        font-family: 'Noto Sans', sans-serif;
     }
 
     .grid2 {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-areas: "content1"
-                             "image1"
-                             "content2"
-                             "image2"; 
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "content image"; 
         grid-gap: 70px; 
-    }
-
-    .activities1 {
-        grid-area: content1;
-    }
-
-    .activities2 {
-        grid-area: image1;
-    }
-
-    .activities1,
-    .activities2 {
-        align-self: center;
-        font-size: 0.8em;
-        text-align: justify;
-        margin: 0px 15px;
-    }
-
-    .images {
-        grid-area: image1;
-    }
-
-    .images2 {
-        grid-area: image2;
-    }
-
-    // nav li
-    li {
-        float: left;
-    }
-
-    a {
-        padding: 5px 10px;
-    }
-
-    .dropdown {
-        float: left;
-    }
-
-    .dropdown .dropbtn {
-        font-size: 0.8em;
-    }
-    // end//
-
-    .main-header {
-        background-attachment: scroll;
-        height: 60vh;
-        align-self: center;
-    }
-
-    .heading {
-        margin-top: 80px;
-        text-align: center;
-        font-size: 1.5em;
-    }
-    
-    .para {
-        padding: 0 10px 0px;
-        font-size: 1em;
-        font-weight: 600;
-        font-family: 'Noto Sans', sans-serif;
-    }
-
-    .bg-camping,
-    .bg-hiking,
-    .bg-climbing,
-    .bg-hiking,
-    .bg-fishing,
-    .bg-hunting,
-    .bg-canoeing {
-        height: 50vh;
-        padding: 10px;
-        align-self: center;
-        background-attachment: scroll;
-    }
-
-    .images {
-        width: 280px;
-        height: 200px;
-        margin-top: 0px;
     }
 
     .images,
     .images2 {
         width: 280px;
         height: 200px;
-        margin-top: 0px;
-        margin-left: 0px;
+        margin-top: 60px;
     }
-} 
+
+    .adventures1,
+    .adventures2 {
+        grid-area: content image;
+    }
+
+    .images,
+    .images2 {
+        grid-area: image content;
+    }
+
+    h1,
+    h2 {
+        font-size: 1em; 
+    }
+
+    p {
+        font-size: 0.7em;
+    }
+}
+
+// mobile 425px 
+
+@media only screen and (max-width:425px) {
+
+    .homepage {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    
+        grid-template-areas: "header"
+                             "prim-content"
+                             "footer";
+    }
+
+    .grid2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "content" 
+                             "image"
+                             "content1"
+                             "image1"; 
+        grid-gap: 0px; 
+    }
+
+    .adventures1 {
+        grid-area: content;
+    }
+
+    .images {
+        grid-area: image;
+    }
+
+    .adventures2 {
+        grid-area: content1;
+    }
+
+    .images2 {
+        grid-area: image1;
+    }
+
+    .heading {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .para {
+        color: white;
+        text-align: center;
+        padding: 0 10px 0 10px;
+        font-size: 0.8em;
+        font-weight: 500;
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    .main-header {
+        font-size: 1em;
+        background-image: linear-gradient(#00ffff69,#00ffff4f) ,url(../images/man-person-jumping-desert.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        height: 50vh;
+        font-family: 'Righteous', cursive;
+    }
+
+    .bg-camping,
+    .bg-hiking,
+    .bg-climbing,
+    .bg-fishing,
+    .bg-hunting,
+    .bg-canoeing {
+        background-attachment: scroll;
+        height: 45vh;
+        color: white;
+        padding: 40px;
+        box-shadow: 3px 7px 7px #a0a0a0,
+                        -3px -7px 7px #a3a3a3;
+        transition: ease .8s, ease-out .4s;
+    }
+
+    .images,
+    .images2 {
+        width: 300px;
+        height: 200px;
+        margin: 15px 10px;
+    }
+
+    .activities1,
+    .activities2 {
+        align-self: center;
+        font-size: 1em;
+        text-align: justify;
+        margin: 5px 10px;
+    }
+
+}
+
+// mobile 375px 
+
+@media only screen and (max-width:375px) {
+    .heading {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    .para {
+        color: white;
+        text-align: center;
+        padding: 0 10px 0 10px;
+        font-size: 0.7em;
+        font-weight: 500;
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    .main-header {
+        font-size: 0.9em;
+    }
+
+    li a {
+        padding-top: 15px;
+    }
+
+    .dropdown {
+        font-size: 0.8em;
+        float: none;
+    }
+}

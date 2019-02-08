@@ -8,7 +8,7 @@ nav {
         margin: 0 auto;
         padding: 0;
         overflow: hidden;
-        background-color: rgba(0, 0, 0, 0.336);
+        background-color: #00000056;
     }
     
     li {
@@ -27,9 +27,6 @@ nav {
             background-color: $hover-col;
             color: black;
             transition: .8s;
-            box-shadow: 1px 2px 2px #363636,
-                        -1px -2px 2px #313131;
-            transition: ease .8s, ease-out .4s;
         }
 
         &:active {
@@ -45,9 +42,6 @@ nav {
         &:hover {
             background-color: $hover-col;
             transition: .8s;
-            text-shadow: 2px 5px 5px #363636,
-                        -2px -5px 5px #313131;
-            transition: ease .8s, ease-out .4s;
         } 
     }  
       
@@ -73,7 +67,7 @@ nav {
         position: absolute;
         background-color: #0000004f;
         width: 105.5px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 8px 16px 0px #00000033;
         z-index: 1;
     }
       
@@ -87,6 +81,7 @@ nav {
         text-align: left;
 
         &hover{
+            color: black;
             transition: .8s;
             background-color: $hover-col;
         }
@@ -126,7 +121,7 @@ nav {
     align-self: center;
     font-size: 1em;
     text-align: justify;
-    margin: 5px 55px;
+    margin: 0px 50px;
 }
 
 .bg-camping {
@@ -136,9 +131,6 @@ nav {
     height: 70vh;
     color: white;
     padding: 100px;
-    box-shadow: 3px 7px 7px #a0a0a0,
-                    -3px -7px 7px #a3a3a3;
-    transition: ease .8s, ease-out .4s;
 }
 
 .bg-hiking {
@@ -148,9 +140,6 @@ nav {
     background-attachment: fixed;
     height: 70vh;
     padding: 100px;
-    box-shadow: 3px 7px 7px #a0a0a0,
-                    -3px -7px 7px #a3a3a3;
-    transition: ease .8s, ease-out .4s;
 }
 
 .bg-climbing {
@@ -160,9 +149,6 @@ nav {
     background-attachment: fixed;
     height: 70vh;
     padding: 100px;
-    box-shadow: 3px 7px 7px #a0a0a0,
-                    -3px -7px 7px #a3a3a3;
-    transition: ease .8s, ease-out .4s;
 }
 
 .bg-fishing {
@@ -172,9 +158,6 @@ nav {
     background-attachment: fixed;
     height: 70vh;
     padding: 100px;
-    box-shadow: 3px 7px 7px #a0a0a0,
-                    -3px -7px 7px #a3a3a3;
-    transition: ease .8s, ease-out .4s;
 }
 
 .bg-hunting {
@@ -184,9 +167,6 @@ nav {
     background-attachment: fixed;
     height: 70vh;
     padding: 100px;
-    box-shadow: 3px 7px 7px #a0a0a0,
-                    -3px -7px 7px #a3a3a3;
-    transition: ease .8s, ease-out .4s;
 }
 
 .bg-canoeing {
@@ -196,9 +176,6 @@ nav {
     background-attachment: fixed;
     height: 70vh;
     padding: 100px;
-    box-shadow: 3px 7px 7px #a0a0a0,
-                    -3px -7px 7px #a3a3a3;
-    transition: ease .8s, ease-out .4s;
 }
 
 .images,
@@ -206,11 +183,6 @@ nav {
     width: 700px;
     height: 410px;
     margin: 20px;
-    box-shadow: 3px 7px 7px #a0a0a0,
-               -3px -7px 7px #a3a3a3;
-    transition: ease .8s, ease-out .4s;
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
 }
 
 // styling my button
@@ -228,9 +200,13 @@ nav {
 } 
 
 footer {
-    background-color: grey;
-    height: 10vh;
+    bottom: 0;
+    font-family: 'Righteous', cursive;
+    font-size: 1.2em;
     text-align: center;
+    padding-top: 5px;
+    height: 15vh;
+    background-color: #00000056;
 }
 
 // end
@@ -242,12 +218,6 @@ footer {
 img {
     width: 100%;
     height: 100%;
-
-    &:hover {
-        box-shadow: 3px 7px 7px #a0a0a0,
-                    -3px -7px 7px #a3a3a3;
-        transition: ease 1s, ease-out 0.2s;
-    }
 }
 
 // camping
@@ -426,9 +396,8 @@ img {
 
 .main-contact {
     text-align: center;
-    margin: 150px 200px;
+    margin: 130px 200px;
     padding: 20px;
-    border-radius: 20px;
     float: right;
     font-family: 'Righteous', cursive;
 }
@@ -440,43 +409,23 @@ input {
     width: 250px;
     height: 30px;
     padding: 5px 10px; 
-    font-size: 1.2em;
-    font-family: 'Righteous', cursive;
-
-    &:hover {
-        background: rgba(255, 255, 255, 0);
-        box-shadow: 3px 7px 7px #a0a0a0,
-                    -3px -7px 7px #a3a3a3;
-        transition: ease 1s, ease-out 0.9s;
-        -webkit-transform: translateX(-2px);
-        transform: translateX(-2px);
-    }
+    font-size: 1em;
 }
 
 select {
     border: 1px black solid;
     background-color: #ffffff15;
-    width: 250px;
+    width: 252px;
     height: 30px;
-    padding-top: 3px;
-    color: grey;
-    font-size: 1em;
-    font-family: 'Righteous', cursive;
+    padding: 2px 10px;
+    color: black;
+    font-size: 1.2em;
 }
 
 textarea {
     border: 1px black solid;
     background-color: #ffffff15; 
-    font-family: 'Righteous', cursive;
-    
-    &:hover {
-        background: #ffffff00;
-        box-shadow: 3px 7px 7px #a0a0a0,
-                    -3px -7px 7px #a3a3a3;
-        transition: ease 1s, ease-out 0.9s;
-        -webkit-transform: translateX(-2px);
-        transform: translateX(-2px);
-    }
+    padding: 5px 10px;
 }
 
 
@@ -491,12 +440,4 @@ textarea {
     font-size: 1.2em;
     font-family: 'Righteous', cursive;
     
-    &:hover {
-        background: #ffffff00;
-        box-shadow: 3px 7px 7px #a0a0a0,
-                    -3px -7px 7px #a3a3a3;
-        transition: ease 1s, ease-out 0.9s;
-        -webkit-transform: translateY(-2px);
-        transform: translateY(-2px);
-    }
 }
