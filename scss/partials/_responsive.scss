@@ -1,3 +1,84 @@
+@media only screen and (max-width:2560px) {
+    .heading {
+        margin-top: 12vw;
+    }
+
+    .para {
+        padding: 2vw 27vw;
+        font-weight: 500;
+    }
+
+    h1 {
+        font-size: 1.4vw;
+    }
+    
+    p {
+        font-size: 1vw;
+    }
+
+    select {
+        border: 1px black solid;
+        background-color: #ffffff15;
+        width: 20vw;
+        height: 75px;
+        padding: 0px 10px;
+        color: grey;
+        font-size: 1.2em;
+    }
+
+    input {
+        height: 75px;
+        width: 20vw;
+    }
+
+    textarea {
+        border: 1px black solid;
+        background-color: #ffffff15;
+        padding: 5px 10px;
+        width: 40vw;
+        height: 9vw;
+        font-size: 1vw;
+    }
+
+    .button {
+        width: 40vw;
+        height: 4vw;
+    }
+
+    .contact-form {
+        h1 {
+            font-size: 2vw;
+        }
+    }
+
+    .main-contact {
+        margin: 160px;
+        margin-left: 15vw;
+        float: none;
+    }
+}
+
+@media only screen and (max-width:1440px) {
+ 
+    .heading {
+        margin-top: 20vw;
+    }
+
+    .para {
+        padding: 2vw 10vw;
+        font-weight: 500;
+    }
+
+    textarea {
+        border: 1px black solid;
+        background-color: #ffffff15;
+        padding: 5px 10px;
+        width: 35.2vw;
+        height: 9vw;
+        font-size: 1vw;
+    }
+}
+
 // responsiveness
 
 // laptop max-width 1024
