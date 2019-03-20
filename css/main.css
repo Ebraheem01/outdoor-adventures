@@ -258,6 +258,14 @@ nav .dropdown:hover .dropdown-content {
   margin: 20px;
 }
 
+.btn {
+  position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: color 1000ms;
+  transition: color 1000ms;
+  border: none;
+}
 .btn a {
   text-decoration: none;
   color: #000000;
@@ -265,6 +273,28 @@ nav .dropdown:hover .dropdown-content {
   font-family: "Righteous", cursive;
   font-size: 1em;
   width: 130px;
+}
+.btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #c2c1c1;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+.btn:hover:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 footer {
@@ -274,7 +304,7 @@ footer {
   text-align: center;
   padding-top: 5px;
   height: 15vh;
-  background-color: #00000056;
+  background-color: #a7a7a7;
 }
 
 img {
@@ -487,8 +517,9 @@ textarea {
   }
 
   .para {
-    padding: 2vw 27vw;
+    padding: 2vw 0vw;
     font-weight: 500;
+    margin-left: 26.5vw;
   }
 
   h1 {
@@ -544,8 +575,9 @@ textarea {
   }
 
   .para {
-    padding: 2vw 10vw;
+    padding: 2vw 0vw;
     font-weight: 500;
+    margin-left: 10vw;
   }
 
   textarea {
@@ -598,7 +630,7 @@ textarea {
   }
 
   .heading {
-    margin-top: 150px;
+    margin-top: 30vw;
     text-align: center;
     font-size: 2.8em;
   }
@@ -632,6 +664,15 @@ h2 {
     grid-template-areas: "header header" "prim-content prim-content" "footer footer";
   }
 
+  .main-header {
+    background-image: linear-gradient(#a0929294, #9786869f), url(../images/man-person-jumping-desert.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 40vh;
+    font-family: "Righteous", cursive;
+  }
+
   .heading {
     margin-top: 100px;
     text-align: center;
@@ -640,10 +681,12 @@ h2 {
 
   .para {
     text-align: center;
-    padding: 0 70px 0 70px;
+    padding: 0 0px 0 0px;
     font-size: 1.4em;
     font-weight: 500;
     font-family: "Noto Sans", sans-serif;
+    margin-left: 1vw;
+    color: white;
   }
 
   .grid2 {
@@ -651,6 +694,42 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "content image";
     grid-gap: 70px;
+  }
+
+  .bg-camping {
+    height: 33vh;
+    background-position: center;
+    background-attachment: scroll;
+  }
+
+  .bg-hiking {
+    height: 33vh;
+    background-position: center;
+    background-attachment: scroll;
+  }
+
+  .bg-climbing {
+    height: 33vh;
+    background-position: center;
+    background-attachment: scroll;
+  }
+
+  .bg-fishing {
+    height: 33vh;
+    background-position: center;
+    background-attachment: scroll;
+  }
+
+  .bg-hunting {
+    height: 33vh;
+    background-position: center;
+    background-attachment: scroll;
+  }
+
+  .bg-canoeing {
+    height: 33vh;
+    background-position: center;
+    background-attachment: scroll;
   }
 
   .images,
@@ -668,6 +747,10 @@ h2 {
   .images,
 .images2 {
     grid-area: image content;
+  }
+
+  footer {
+    height: 8vh;
   }
 
   h1,
@@ -702,6 +785,16 @@ select {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "header" "prim-content" "footer";
+  }
+
+  .main-header {
+    font-size: 1em;
+    background-image: linear-gradient(#a0929294, #9786869f), url(../images/man-person-jumping-desert.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 30vh;
+    font-family: "Righteous", cursive;
   }
 
   .grid2 {
@@ -742,24 +835,15 @@ select {
     font-family: "Noto Sans", sans-serif;
   }
 
-  .main-header {
-    font-size: 1em;
-    background-image: linear-gradient(#00ffff69, #00ffff4f), url(../images/man-person-jumping-desert.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    height: 50vh;
-    font-family: "Righteous", cursive;
-  }
-
   .bg-camping,
 .bg-hiking,
 .bg-climbing,
 .bg-fishing,
 .bg-hunting,
 .bg-canoeing {
+    background-position: center;
     background-attachment: scroll;
-    height: 45vh;
+    height: 35vh;
     color: white;
     padding: 40px;
   }
@@ -799,6 +883,19 @@ select {
   }
 }
 @media only screen and (max-width: 375px) {
+  .bg-camping,
+.bg-hiking,
+.bg-climbing,
+.bg-fishing,
+.bg-hunting,
+.bg-canoeing {
+    background-position: center;
+    background-attachment: scroll;
+    height: 30vh;
+    color: white;
+    padding: 40px;
+  }
+
   .heading {
     margin-top: 50px;
     text-align: center;
@@ -868,6 +965,12 @@ select {
 
   .main-header {
     font-size: 0.6em;
+    height: 60vw;
+  }
+
+  .container {
+    display: block;
+    margin-top: 1vw;
   }
 
   a {
@@ -890,7 +993,7 @@ select {
 .bg-hunting,
 .bg-canoeing {
     background-attachment: scroll;
-    height: 45vh;
+    height: 20vh;
     color: white;
     padding: 20px;
   }

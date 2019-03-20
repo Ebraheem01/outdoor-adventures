@@ -4,8 +4,9 @@
     }
 
     .para {
-        padding: 2vw 27vw;
+        padding: 2vw 0vw;
         font-weight: 500;
+        margin-left: 26.5vw;
     }
 
     h1 {
@@ -65,8 +66,9 @@
     }
 
     .para {
-        padding: 2vw 10vw;
+        padding: 2vw 0vw;
         font-weight: 500;
+        margin-left: 10vw;
     }
 
     textarea {
@@ -83,6 +85,7 @@
 
 // laptop max-width 1024
 @media only screen and (max-width:1024px) {
+
 
     // grids
 
@@ -131,10 +134,11 @@
 // styling the header
 
     .heading {
-        margin-top: 150px;
+        margin-top: 30vw;
         text-align: center;
         font-size: 2.8em;
     }
+
 
     .para {
         text-align: center;
@@ -174,6 +178,15 @@
                              "footer footer";
     }
 
+    .main-header {
+        background-image: linear-gradient(#a0929294, #9786869f) ,url(../images/man-person-jumping-desert.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 40vh;
+        font-family: "Righteous", cursive;
+    }
+
     .heading {
         margin-top: 100px;
         text-align: center;
@@ -182,10 +195,12 @@
 
     .para {
         text-align: center;
-        padding: 0 70px 0 70px;
+        padding: 0 0px 0 0px;
         font-size: 1.4em;
         font-weight: 500;
-        font-family: 'Noto Sans', sans-serif;
+        font-family: "Noto Sans", sans-serif;
+        margin-left: 1vw;
+        color: white;
     }
 
     .grid2 {
@@ -193,6 +208,42 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "content image"; 
         grid-gap: 70px; 
+    }
+
+    .bg-camping {
+        height: 33vh;
+        background-position: center;
+        background-attachment: scroll;
+    }
+
+    .bg-hiking {
+        height: 33vh;
+        background-position: center;
+        background-attachment: scroll;
+    }
+
+    .bg-climbing {
+        height: 33vh;
+        background-position: center;
+        background-attachment: scroll;
+    }
+
+    .bg-fishing {
+        height: 33vh;
+        background-position: center;
+        background-attachment: scroll;
+    }
+
+    .bg-hunting {
+        height: 33vh;
+        background-position: center;
+        background-attachment: scroll;
+    }
+
+    .bg-canoeing {
+        height: 33vh;
+        background-position: center;
+        background-attachment: scroll;
     }
 
     .images,
@@ -210,6 +261,10 @@
     .images,
     .images2 {
         grid-area: image content;
+    }
+
+    footer {
+        height: 8vh;
     }
 
     h1,
@@ -256,6 +311,16 @@
                              "prim-content"
                              "footer";
     }
+    
+    .main-header {
+        font-size: 1em;
+        background-image: linear-gradient(#a0929294, #9786869f), url(../images/man-person-jumping-desert.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        height: 30vh;
+        font-family: "Righteous", cursive;
+    }
 
     .grid2 {
         display: grid;
@@ -298,24 +363,15 @@
         font-family: 'Noto Sans', sans-serif;
     }
 
-    .main-header {
-        font-size: 1em;
-        background-image: linear-gradient(#00ffff69,#00ffff4f) ,url(../images/man-person-jumping-desert.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        height: 50vh;
-        font-family: 'Righteous', cursive;
-    }
-
     .bg-camping,
     .bg-hiking,
     .bg-climbing,
     .bg-fishing,
     .bg-hunting,
     .bg-canoeing {
+        background-position: center;
         background-attachment: scroll;
-        height: 45vh;
+        height: 35vh;
         color: white;
         padding: 40px;
     }
@@ -360,6 +416,19 @@
 // mobile 375px 
 
 @media only screen and (max-width:375px) {
+
+    .bg-camping,
+    .bg-hiking,
+    .bg-climbing,
+    .bg-fishing,
+    .bg-hunting,
+    .bg-canoeing {
+        background-position: center;
+        background-attachment: scroll;
+        height: 30vh;
+        color: white;
+        padding: 40px;
+    }
 
     .heading {
         margin-top: 50px;
@@ -432,6 +501,12 @@
 
     .main-header {
         font-size: 0.6em;
+        height: 60vw;
+    }
+
+    .container {
+        display: block;
+        margin-top: 1vw;
     }
 
     a {
@@ -454,7 +529,7 @@
     .bg-hunting,
     .bg-canoeing {
         background-attachment: scroll;
-        height: 45vh;
+        height: 20vh;
         color: white;
         padding: 20px;
     }
