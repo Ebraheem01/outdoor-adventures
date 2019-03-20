@@ -75,9 +75,18 @@
         border: 1px black solid;
         background-color: #ffffff15;
         padding: 5px 10px;
-        width: 35.2vw;
+        width: 40vw;
         height: 9vw;
         font-size: 1vw;
+    }
+
+    .main-contact {
+        margin-left: 30vw;
+    }
+
+    footer {
+        height: 11vh;
+        margin-top: 30vw;
     }
 }
 
@@ -158,8 +167,35 @@
     }
 
     .main-contact {
-        margin-left: 0px;
-        margin-right: 0px;
+        background-color: #ffffff00;
+        margin-left: 10vw;
+        margin-right: 1vw;
+    }
+
+    .contact-form h1 {
+        font-size: 6vw;
+    }
+
+    input, select {
+        width: 40vw;
+        margin: 1vw;
+        font-size: 5vw;
+    }
+
+    textarea {
+        width: 82vw;
+        height: 35vw;
+        font-size: 5vw;
+    }
+
+    .button {
+        width: 82vw;
+        height: 10vw;
+        font-size: 5vw;
+    }
+
+    .contact {
+        background-position: center;
     }
 }
 
@@ -277,23 +313,36 @@
     }
 
     .main-contact {
-        margin-left: 0px;
-        margin-right: 0px;
+        background-color: #ffffff81;
+        margin-left: 1vw;
+        margin-right: 1vw;
     }
 
-    input,
-    select {
-        width: 125px;
+    .contact-form h1 {
+        font-size: 6vw;
+    }
+
+    input, select {
+        width: 80vw;
+        margin: 1vw;
+        font-size: 5vw;
     }
 
     textarea {
-        width: 250px;
+        width: 80vw;
+        height: 35vw;
+        font-size: 5vw;
     }
 
     .button {
-        width: 250px;
+        width: 80vw;
+        height: 10vw;
+        font-size: 5vw;
     }
 
+    .contact {
+        background-position: none;
+    }
 
 }
 
@@ -391,23 +440,35 @@
         margin: 5px 10px;
     }
 
+    
     .main-contact {
-        background-color: #ffffff93;
-        margin-left: 100px;
-        margin-right: 20px;
+        background-color: #ffffff00;
+        margin-left: 1vw;
+        margin-right: 1vw;
     }
 
-    input,
-    select {
-        width: 125px;
+    .contact-form h1 {
+        font-size: 6vw;
+    }
+
+    input, select {
+        width: 80vw;
+        margin: 1vw;
     }
 
     textarea {
-        width: 250px;
+        width: 80vw;
+        height: 35vw;
+        font-size: 4vw;
     }
 
     .button {
-        width: 250px;
+        width: 80vw;
+        height: 10vw;
+    }
+
+    .contact {
+        background-position: center;
     }
 
 
@@ -464,17 +525,24 @@
         margin-right: 20px;
     }
 
-    input,
-    select {
-        width: 100px;
+    .contact-form h1 {
+        font-size: 6vw;
+    }
+
+    input, select {
+        width: 80vw;
+        margin: 1vw;
     }
 
     textarea {
-        width: 200px;
+        width: 80vw;
+        height: 35vw;
+        font-size: 4vw;
     }
 
     .button {
-        width: 200px;
+        width: 80vw;
+        height: 10vw;
     }
 }
 
@@ -510,12 +578,12 @@
     }
 
     a {
-        font-size: 0.9em;
+        font-size: 0.6em;
         padding: 0 auto;
     }
 
     nav .dropdown .dropbtn {
-        font-size: 11px;
+        font-size: 10px;
     }
 
     nav .dropdown-content {
@@ -529,7 +597,7 @@
     .bg-hunting,
     .bg-canoeing {
         background-attachment: scroll;
-        height: 20vh;
+        height: 30vh;
         color: white;
         padding: 20px;
     }
@@ -539,22 +607,37 @@
     }
 
     .main-contact {
-        background-color: #ffffff93;
-        margin-left: 100px;
-        margin-right: 20px;
+        background-color: #ffffff00;
+        margin-left: 1vw;
+        margin-right: 1vw;
     }
 
-    input,
-    select {
-        width: 75px;
+    .contact {
+        background-position: center;
+    }
+
+    footer {
+        height: 10vh;
+    }
+
+    .contact-form h1 {
+        font-size: 6vw;
+    }
+
+    input, select {
+        width: 80vw;
+        margin: 1vw;
     }
 
     textarea {
-        width: 150px;
+        width: 80vw;
+        height: 35vw;
+        font-size: 4vw;
     }
 
     .button {
-        width: 150px;
+        width: 80vw;
+        height: 10vw;
     }
 
     .menu li {
