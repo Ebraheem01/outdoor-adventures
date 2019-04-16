@@ -21,14 +21,14 @@
         border: 1px black solid;
         background-color: #ffffff15;
         width: 20vw;
-        height: 75px;
+        height: 49.5px;
         padding: 0px 10px;
         color: grey;
         font-size: 1.2em;
     }
 
     input {
-        height: 75px;
+        height: 50px;
         width: 20vw;
     }
 
@@ -53,9 +53,13 @@
     }
 
     .main-contact {
-        margin: 160px;
+        margin: 0;
         margin-left: 15vw;
         float: none;
+    }
+
+    footer {
+        height: 20vh;
     }
 }
 
@@ -85,8 +89,7 @@
     }
 
     footer {
-        height: 11vh;
-        margin-top: 30vw;
+        height: 15vh;
     }
 }
 
@@ -166,36 +169,8 @@
         font-size: 0.9em;
     }
 
-    .main-contact {
-        background-color: #ffffff00;
-        margin-left: 10vw;
-        margin-right: 1vw;
-    }
-
-    .contact-form h1 {
-        font-size: 6vw;
-    }
-
-    input, select {
-        width: 40vw;
-        margin: 1vw;
-        font-size: 5vw;
-    }
-
-    textarea {
-        width: 82vw;
-        height: 35vw;
-        font-size: 5vw;
-    }
-
-    .button {
-        width: 82vw;
-        height: 10vw;
-        font-size: 5vw;
-    }
-
-    .contact {
-        background-position: center;
+    footer {
+        height: 20vh;
     }
 }
 
@@ -312,36 +287,8 @@
         font-size: 0.7em;
     }
 
-    .main-contact {
-        background-color: #ffffff81;
-        margin-left: 1vw;
-        margin-right: 1vw;
-    }
-
-    .contact-form h1 {
-        font-size: 6vw;
-    }
-
-    input, select {
-        width: 80vw;
-        margin: 1vw;
-        font-size: 5vw;
-    }
-
-    textarea {
-        width: 80vw;
-        height: 35vw;
-        font-size: 5vw;
-    }
-
-    .button {
-        width: 80vw;
-        height: 10vw;
-        font-size: 5vw;
-    }
-
-    .contact {
-        background-position: none;
+    footer {
+        height: 15vh;
     }
 
 }
@@ -443,6 +390,7 @@
     
     .main-contact {
         background-color: #ffffff00;
+        padding: 0;
         margin-left: 1vw;
         margin-right: 1vw;
     }
@@ -469,7 +417,14 @@
 
     .contact {
         background-position: center;
+        background-size: inherit;
     }
+
+    footer {
+        height: 15vh;
+    }
+
+    
 
 
 }
@@ -617,7 +572,7 @@
     }
 
     footer {
-        height: 10vh;
+        height: 15vh;
     }
 
     .contact-form h1 {
