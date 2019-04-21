@@ -17,15 +17,6 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
-.main-header {
-    background-image: linear-gradient(#00ffff69,#00ffff4f) ,url(../images/man-person-jumping-desert.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
-    font-family: 'Righteous', cursive;
-}
-
 .gallery {
     background-image: linear-gradient(#4646467e,#8d8d8da4,#7070708f,#7272723a) ,url(../images/man-person-jumping-desert.jpg);
     background-attachment: fixed;
@@ -51,4 +42,8 @@ h2 {
 p {
     font-size: 1em; 
 }
+
+// header slideshow 
+
+
 

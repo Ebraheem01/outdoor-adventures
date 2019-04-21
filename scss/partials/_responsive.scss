@@ -1,7 +1,7 @@
 @media only screen and (max-width:2560px) {
-    .heading {
-        margin-top: 12vw;
-    }
+    // .heading {
+    //     margin-top: 12vw;
+    // }
 
     .para {
         padding: 2vw 0vw;
@@ -65,9 +65,9 @@
 
 @media only screen and (max-width:1440px) {
  
-    .heading {
-        margin-top: 20vw;
-    }
+    // .heading {
+    //     margin-top: 20vw;
+    // }
 
     .para {
         padding: 2vw 0vw;
@@ -138,7 +138,7 @@
     .activities2 {
         align-self: center;
         font-size: 1em;
-        text-align: justify;
+        text-align: left;
         margin: 5px 10px;
     }
 
@@ -146,7 +146,6 @@
 // styling the header
 
     .heading {
-        margin-top: 30vw;
         text-align: center;
         font-size: 2.8em;
     }
@@ -199,7 +198,6 @@
     }
 
     .heading {
-        margin-top: 100px;
         text-align: center;
         font-size: 2em;
     }
@@ -222,37 +220,37 @@
     }
 
     .bg-camping {
-        height: 33vh;
+        height: 55vh;
         background-position: center;
         background-attachment: scroll;
     }
 
     .bg-hiking {
-        height: 33vh;
+        height: 55vh;
         background-position: center;
         background-attachment: scroll;
     }
 
     .bg-climbing {
-        height: 33vh;
+        height: 55vh;
         background-position: center;
         background-attachment: scroll;
     }
 
     .bg-fishing {
-        height: 33vh;
+        height: 55vh;
         background-position: center;
         background-attachment: scroll;
     }
 
     .bg-hunting {
-        height: 33vh;
+        height: 55vh;
         background-position: center;
         background-attachment: scroll;
     }
 
     .bg-canoeing {
-        height: 33vh;
+        height: 55vh;
         background-position: center;
         background-attachment: scroll;
     }
@@ -267,15 +265,12 @@
     .adventures1,
     .adventures2 {
         grid-area: content image;
+        text-align: left;
     }
 
     .images,
     .images2 {
         grid-area: image content;
-    }
-
-    footer {
-        height: 8vh;
     }
 
     h1,
@@ -288,7 +283,7 @@
     }
 
     footer {
-        height: 15vh;
+        height: 20vh;
     }
 
 }
@@ -345,7 +340,6 @@
     }
 
     .heading {
-        margin-top: 50px;
         text-align: center;
         font-size: 1em;
     }
@@ -383,7 +377,7 @@
     .activities2 {
         align-self: center;
         font-size: 1em;
-        text-align: justify;
+        text-align: left;
         margin: 5px 10px;
     }
 
@@ -447,7 +441,6 @@
     }
 
     .heading {
-        margin-top: 50px;
         text-align: center;
         font-size: 0.9em;
     }
@@ -469,7 +462,7 @@
         padding-top: 15px;
     }
 
-    .dropdown {
+    .dropdown1 {
         font-size: 0.8em;
         float: none;
     }
@@ -508,9 +501,9 @@
     }
 
     .heading {
-        margin-top: 50px;
         text-align: center;
         font-size: 1.3em;
+        padding-top: 30vh;
     }
 
     .para {
@@ -537,11 +530,11 @@
         padding: 0 auto;
     }
 
-    nav .dropdown .dropbtn {
+    nav .dropdown1 .dropbtn1 {
         font-size: 10px;
     }
 
-    nav .dropdown-content {
+    nav .dropdown-content1 {
         width: 76.5px;
     }
 
